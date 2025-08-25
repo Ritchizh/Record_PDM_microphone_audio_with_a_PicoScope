@@ -1,5 +1,5 @@
 # Record_PDM_microphone_audio_with_a_PicoScope
-This project captures and decodes audio from a TDK T5838 digital microphone using a PicoScope 3406D MSO. Python with PicoSDK acquires the PDM signals, decodes them via low-pass filtering and decimation to 48 kHz, and plays the reconstructed audio.
+This project captures and decodes audio from a PDM digital microphone using a PicoScope 3406D MSO. Python with PicoSDK acquires the PDM signals, decodes them via low-pass filtering and decimation to 48 kHz, and plays the reconstructed audio.
 
 # Introduction:
 This project implements the acquisition and decoding of audio from a digital Pulse Density Modulation (PDM) microphone. PDM microphones encode analog sound into a 1-bit digital bitstream using delta–sigma modulation, where the density of logical ones represents the instantaneous amplitude of the signal. To reconstruct the audio waveform, the PDM signal must undergo low-pass filtering to suppress high-frequency quantization noise, followed by decimation to obtain a conventional audio sampling rate of 48 kHz.
